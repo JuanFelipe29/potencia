@@ -1,0 +1,27 @@
+@import url(../css/styles.css);
+
+
+ .casos-exito{
+    padding-top: 5rem;
+}
+
+.contenedor-casos-exito{
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 3rem;
+}
+
+.card-casos-exito{
+    border: none;
+    transition: transform 0.3s ease;
+}
+.card-casos-exito:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+
+@media (max-width: 480px) {
+    .contenedor-casos-exito{
+        width: 80%;
+    }
+}

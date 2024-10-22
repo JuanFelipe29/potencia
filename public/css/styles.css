@@ -38,10 +38,19 @@ h2{
 }
 h3{
     font-size: 1.8rem;
+    font-weight: bold;
+}
+h4{
+    font-size: 1.2rem;
+    font-family: var(--fuenteParrafo);
+    color: var(--gris);
 }
 h1, h2, h3{
+    text-align: center;
     font-family: var(--fuenteTitulo);
 }
 p, a{
     font-family: var(--fuenteParrafo);
+    font-size: 1.5rem;
+    text-align: left;
 }
