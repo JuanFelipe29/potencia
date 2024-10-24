@@ -1,125 +1,114 @@
-/* Estilo de los números */
 .number {
-    font-size: 5.5rem; /* Aumentado de 5rem a 5.5rem */
+    font-size: 5.5rem;
     font-weight: bold;
-    color: var(--negro); /* Usamos la variable global para el color */
+    color: var(--negro);
 }
 
-/* Estilo para las etiquetas debajo del número (años, millones) */
 .label {
-    font-size: 2.2rem; /* Aumentado de 2rem a 2.2rem */
+    font-size: 2.2rem;
     font-weight: bold;
-    color: var(--negro); /* Usamos la variable global para el color */
+    color: var(--negro);
     text-align: center;
 }
 
 .description {
-    font-size: 1.4rem; /* Aumentado de 1.2rem a 1.4rem */
-    color: var(--gris); /* Usamos la variable global para el color */
+    font-size: 1.4rem;
+    color: var(--gris);
     text-align: center;
 }
 
-/* Línea vertical entre los números */
 .divider {
-    border-left: 3px solid var(--grisClaro); /* Mantenido */
+    border-left: 3px solid var(--grisClaro);
     height: 100%;
     position: absolute;
     left: 50%;
     top: 0;
 }
 
-/* Sombra y efecto hover */
 .hover-shadow:hover {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); /* Aumentado de 20px a 25px */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
 }
 
-/* Estilo de las secciones de misión y visión */
 .card-body {
-    padding: 45px; /* Aumentado de 40px a 45px */
+    padding: 45px;
 }
 
 .card-title {
-    margin-bottom: 35px; /* Aumentado de 30px a 35px */
+    margin-bottom: 35px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 2.2rem; /* Aumentado de 2rem a 2.2rem */
-    color: var(--negro); /* Usamos la variable global para el color */
+    font-size: 2.2rem;
+    color: var(--negro);
 }
 
-/* Mejora de la estética general */
 p {
-    font-size: 1.4rem; /* Aumentado de 1.2rem a 1.4rem */
+    font-size: 1.4rem;
     line-height: 2;
 }
 
-/* Espaciado superior e inferior para la presentación */
 .section-padding {
-    padding: 90px 0; /* Aumentado de 80px a 90px */
+    padding: 90px 0;
 }
 
 .text-block {
-    font-size: 1.5rem; /* Aumentado de 1.4rem a 1.5rem */
+    font-size: 1.5rem;
     line-height: 2.2;
 }
 
-/* Espaciado entre tarjetas en pantallas pequeñas */
 .card-margin {
-    margin-bottom: 50px; /* Aumentado de 40px a 50px */
+    margin-bottom: 50px;
 }
 
-/* Asegurar que haya espacio entre las tarjetas en responsive */
 @media (max-width: 767.98px) {
     .divider {
         display: none;
     }
 }
 
-/* Estilo específico para la imagen de la metodología */
 .methodology-section {
-    padding: 90px 0; /* Aumentado de 80px a 90px */
+    padding: 90px 0;
     display: flex;
-    align-items: center; /* Alineación vertical */
+    align-items: center;
 }
 
 .methodology-image {
     width: 100%;
-    max-width: 550px; /* Aumentado de 500px a 550px */
+    max-width: 550px;
     height: auto;
 }
 
 .methodology-title {
-    font-size: 3.2rem; /* Aumentado de 3rem a 3.2rem */
-    color: var(--negro); /* Color negro para coherencia */
-    margin-bottom: 35px; /* Espacio debajo del título */
-    text-align: center; /* Centramos el texto */
+    font-size: 3.2rem;
+    color: var(--negro);
+    margin-bottom: 35px;
+    text-align: center;
 }
 
 .methodology-text {
-    font-size: 1.6rem; /* Aumentado de 1.5rem a 1.6rem */
-    line-height: 2.2; /* Mejoramos la legibilidad */
-    color: var(--gris); /* Usamos la variable global para el color */
-    margin-bottom: 25px; /* Espacio entre párrafos */
-    text-align: justify; /* Justificación de los párrafos */
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: var(--gris);
+    margin-bottom: 25px;
+    text-align: justify;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767.98px) {
     .methodology-section {
         flex-direction: column;
-        padding: 30px; /* Separar la imagen del texto en pantallas pequeñas */
+        padding: 30px;
     }
 
     .methodology-image {
-        margin-bottom: 30px; /* Aumentar el espacio entre la imagen y el texto */
+        margin-bottom: 30px;
     }
 
     .container {
         padding-left: 15px;
-        padding-right: 15px; /* Evitar que el texto toque los bordes */
+        padding-right: 15px;
     }
 }
-/* Contenedor que iguala la altura de las tarjetas */
+
 .equal-height-cards {
     display: flex;
     flex-wrap: wrap;
@@ -131,27 +120,24 @@ p {
     flex-direction: column;
 }
 
-/* El cuerpo de la tarjeta ocupa el espacio restante */
 .card-body {
-    flex-grow: 1; /* Permite que todas las tarjetas crezcan de manera uniforme */
-    padding: 45px; /* Aumentado de 40px a 45px */
+    flex-grow: 1;
+    padding: 45px;
 }
 
-/* Resto del estilo (anteriormente definido) */
 .card-title {
-    margin-bottom: 35px; /* Aumentado de 30px a 35px */
+    margin-bottom: 35px;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 2.2rem; /* Aumentado de 2rem a 2.2rem */
-    color: var(--negro); /* Usamos la variable global para el color */
+    font-size: 2.2rem;
+    color: var(--negro);
 }
 
 .card-text {
-    font-size: 1.5rem; /* Ajustado el tamaño */
+    font-size: 1.5rem;
     line-height: 2;
 }
 
-/* Aseguramos que todas las tarjetas mantengan la misma altura */
 .equal-height-cards .card {
-    height: 100%; /* Las tarjetas ocupan el mismo espacio en altura */
+    height: 100%;
 }
