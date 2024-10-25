@@ -3,7 +3,7 @@
 .header{
     display: flex;
     flex-direction: column;
-    background-image: url(../../public/images/Fondo\ Azul.png);
+    background-image: url(/images/Fondo\ Azul.png);
     background-size: cover;
     background-repeat: no repeat;
     min-height: 120vh;

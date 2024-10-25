@@ -1,0 +1,145 @@
+@import url(../css/styles.css);
+
+/* Estilos personalizados */
+.number-custom {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: #262C60;
+}
+
+.label-custom {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--negro);
+    text-align: center;
+}
+
+.description-custom {
+    font-size: 1.4rem;
+    color: var(--gris);
+    text-align: center;
+}
+
+.divider-custom {
+    border-left: 3px solid var(--grisClaro);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.hover-shadow-custom:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.body-custom {
+    padding: 45px;
+}
+
+.title-custom {
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: #262C60;
+}
+
+.section-padding-custom {
+    padding: 90px 0;
+}
+
+.text-block-custom {
+    font-size: 1.5rem;
+    line-height: 2.2;
+}
+
+.margin-custom {
+    margin-bottom: 50px;
+}
+
+.container-custom {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767.98px) {
+    .divider-custom {
+        display: none;
+    }
+
+    .container-custom {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.methodology-section-custom {
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+}
+
+.methodology-image-custom {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.methodology-title-custom {
+    font-size: 3.2rem;
+    color: #262C60;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.methodology-text-custom {
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: var(--gris);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    .methodology-section-custom {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .methodology-image-custom {
+        margin-bottom: 30px;
+    }
+}
+
+.equal-height-cards-custom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height-cards-custom .imported-card {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.body-custom {
+    flex-grow: 1;
+    padding: 45px;
+}
+
+.title-custom {
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--negro);
+}
+
+.text-custom {
+    font-size: 1.5rem;
+    line-height: 2;
+}
