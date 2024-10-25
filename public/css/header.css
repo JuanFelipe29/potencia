@@ -42,6 +42,9 @@
 .logo-navegacion-mobile{
     display: flex;
 }
+.contenedor-menu-mobile{
+    padding: 0;
+}
 .boton-menu {
     color: white;
     font-size: 4rem;
