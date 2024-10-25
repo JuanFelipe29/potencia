@@ -1,3 +1,5 @@
+@import url(../css/styles.css);
+
 .number {
     font-size: 5.5rem;
     font-weight: bold;
@@ -42,10 +44,7 @@
     color: var(--negro);
 }
 
-p {
-    font-size: 1.4rem;
-    line-height: 2;
-}
+
 
 .section-padding {
     padding: 90px 0;

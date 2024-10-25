@@ -1,0 +1,70 @@
+@import url(../css/styles.css);
+
+/* Estilos generales */
+.team-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+.team-card {
+    background-color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra inicial suave */
+    transition: box-shadow 0.3s ease; /* Transición para el sombreado */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Imagen de los miembros */
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+.team-title {
+    font-size: 1.2rem;
+    color: var(--gris);
+    margin-bottom: 10px;
+}
+
+.team-description {
+    font-size: 1rem;
+    color: var(--gris);
+}
+
+/* Efecto de sombra al pasar el mouse */
+.hover-effect:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa alrededor */
+}
+
+/* Estilos del botón Ver Más */
+.ver-mas {
+    background-color: var(--grisOscuro);
+    color: var(--negro);
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: 2px solid var(--negro); /* Borde negro */
+    border-radius: 0px; /* Botón cuadrado */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.ver-mas:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border-color: var(--negro);
+}

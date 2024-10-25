@@ -1,0 +1,142 @@
+@import url(../css/styles.css);
+
+.number {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: var(--negro);
+}
+
+.label {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--negro);
+    text-align: center;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: var(--gris);
+    text-align: center;
+}
+
+.divider {
+    border-left: 3px solid var(--grisClaro);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-body {
+    padding: 45px;
+}
+
+.card-title {
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--negro);
+}
+
+
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.text-block {
+    font-size: 1.5rem;
+    line-height: 2.2;
+}
+
+.card-margin {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767.98px) {
+    .divider {
+        display: none;
+    }
+}
+
+.methodology-section {
+    padding: 90px 0;
+    display: flex;
+    align-items: center;
+}
+
+.methodology-image {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.methodology-title {
+    font-size: 3.2rem;
+    color: var(--negro);
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.methodology-text {
+    font-size: 1.6rem;
+    line-height: 2.2;
+    color: var(--gris);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    .methodology-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .methodology-image {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.equal-height-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height-cards .card {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 45px;
+}
+
+.card-title {
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--negro);
+}
+
+.card-text {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.equal-height-cards .card {
+    height: 100%;
+}
