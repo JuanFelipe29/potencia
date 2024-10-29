@@ -144,3 +144,11 @@
         display: none;
     }
 }
+
+.offcanvas-titulo{
+    font-size: 2.5rem;
+}
+
+.nav-item a{
+    font-size: 1.5rem;
+}

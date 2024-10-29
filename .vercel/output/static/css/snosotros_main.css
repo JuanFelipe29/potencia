@@ -1,0 +1,21 @@
+@import url(../css/styles.css);
+
+.sobre-nosotros{
+    background-color: var(--blanco);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.contenedor-sobre-nosotros{
+    width: 60%;
+    margin: 0 auto;
+}
+.contenedor-sobre-nosotros p{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .contenedor-sobre-nosotros{
+        width: 80%;
+    }
+}
