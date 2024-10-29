@@ -13,15 +13,28 @@
 
 .boton-conectate{
     border: none;
-    background-color: rgb(73, 229, 218);
+    background-color: rgb(4, 163, 153);
     color: white;
     font-size: 1rem;
     width: 10rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 
 .p-2 h2{
     font-weight: bolder;
+}
+
+.contenedor-lineaH{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-icono{
+    width: 80%;
+    margin: 0 auto;
+}
+.linkedIn{
+    width: 8rem;
 }
 
 @media (max-width: 480px) {

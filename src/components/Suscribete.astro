@@ -1,0 +1,60 @@
+<section class="suscribete">
+
+    <div class="contenedor-suscribete">
+        <div class="contenedor-logo-suscribete aparecer-lado">
+
+            <a href=""><img class="logo-suscribete" src="/images/potenciaNegro.png" alt=""></a>
+            <h3>Suscribete</h3>
+            <p>Suscribete para estar enterado de nuestras novedades</p>
+
+            <form class="row g-3 formulario-suscribete">
+                <div class="col-auto email-suscribete">
+                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                  <input type="text" class="form-control" id="inputPassword2" placeholder="email">
+                </div>
+                <div class="col-auto boton-suscribete">
+                  <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedor-politicas">
+        <div class="politicas aparecer-lado-derecha">
+            <a class="terminos"  href=""> Contactanos</a>
+            <a class="terminos"  href=""> FAQ </a>
+            <a class="terminos"  href=""> Politicas de privacidad</a>
+            <a class="terminos"  href=""> Preferencias de cookies </a>
+            <a class="terminos"  href=""> Declaracion de privacidad </a>
+            <a class="terminos"  href=""> Terminos de uso </a>
+        </div>
+        <div class="contenedor-iconos aparecer-lado-derecha">
+            <a class="iconos" href=""> <img src="/iconos/LinkedIn2.png" alt=""></a>
+            <a class="iconos" href=""> <img src="/iconos/X.png" alt=""></a>
+            <a class="iconos" href=""> <img src="/iconos/Facebook.png" alt=""></a>
+            <a class="iconos" href=""> <img src="/iconos/Instagram.png" alt=""></a>
+            <a class="iconos" href=""> <img src="/iconos/YouTube.png" alt=""></a>
+        </div>
+    </div>
+
+<script>
+    // Seleccionar los elementos que queremos animar
+const elementosIzquierda = document.querySelectorAll('.aparecer-lado');
+const elementosDerecha = document.querySelectorAll('.aparecer-lado-derecha');
+
+// Definir el observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // Añadir la clase visible cuando entra en el viewport
+    }
+  });
+});
+
+// Observar cada uno de los elementos
+elementosIzquierda.forEach((el) => observer.observe(el));
+elementosDerecha.forEach((el) => observer.observe(el));
+
+</script>
+
+</section>

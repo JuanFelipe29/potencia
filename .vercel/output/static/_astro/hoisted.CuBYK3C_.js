@@ -1,0 +1,1 @@
+const c=document.querySelectorAll(".aparecer-lado"),s=document.querySelectorAll(".aparecer-lado-derecha"),o=new IntersectionObserver(e=>{e.forEach(r=>{r.isIntersecting&&r.target.classList.add("visible")})});c.forEach(e=>o.observe(e));s.forEach(e=>o.observe(e));

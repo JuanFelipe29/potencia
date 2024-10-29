@@ -27,9 +27,7 @@
     transition: transform 0.3s ease;
     min-height: 100%;
 }
-.card-casos-exito:hover {
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
+
 
 @media (max-width: 768px) {
     .card-casos-exito img{
@@ -47,4 +45,36 @@
     .boton-exitos{
         width: 50%;
     }
+}
+
+/* Inicialmente, los elementos están ocultos y desplazados */
+.fade-left, .fade-right, .fade-up, .fade-down, .fade-up {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
+.fade-left {
+    transform: translateX(-100px); /* Desplazado hacia la izquierda */
+}
+  
+.fade-right {
+    transform: translateX(100px); /* Desplazado hacia la derecha */
+}
+
+.fade-down{
+    transform: translateY(100px);
+}
+
+.fade-up{
+    transform: translateY(-100px);
+}
+  
+  /* Cuando el elemento entra en la vista, le añadimos la clase 'show' */
+.fade-left.show, .fade-right.show, .fade-down.show, .fade-up.show {
+    opacity: 1;
+    transform: translateX(0); /* Regresa a su posición original */
+}
+  
+.card-casos-exito:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
 }

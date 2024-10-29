@@ -1,0 +1,111 @@
+@import url(../css/styles.css);
+
+.suscribete{
+    background-color: var(--blanco);
+    padding-bottom: 5rem;
+}
+
+.contenedor-suscribete{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.contenedor-logo-suscribete{
+    width: 30%;
+    padding-bottom: 3rem;
+}
+.contenedor-logo-suscribete h3{
+    color: var(--negro);
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 3rem;
+}
+.contenedor-logo-suscribete p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.logo-suscribete{
+    width: 80%;
+}
+
+.formulario-suscribete{
+    width: 100%;
+}
+.email-suscribete{
+    width: 20rem;
+    height: 5rem;
+}
+
+.contenedor-politicas{
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.politicas{
+    margin-left: 50%;
+}
+.politicas a{
+    text-decoration: none;
+    padding-left: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+.contenedor-iconos{
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.iconos img{
+    width: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor-logo-suscribete{
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-logo-suscribete{
+        width: 90%;
+    }
+    .politicas{
+        margin-left: 0;
+        justify-content:center;
+        text-align: center;
+    }
+    .contenedor-iconos{
+        justify-content: center;
+    }
+}
+
+/** animaciones **/
+.politicas a:hover, 
+.iconos img:hover {
+    transform: translateY(-10px); /* Levanta el icono/termino 10px hacia arriba */
+    transition: transform 0.3s ease; /* Controla la duración y suavidad de la animación */
+}
+
+/* Estado inicial de los iconos y términos (invisibles y desplazados) */
+.aparecer-lado {
+    opacity: 0;
+    transform: translateX(-50px); /* Desplazado hacia la izquierda inicialmente */
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.aparecer-lado-derecha {
+    opacity: 0;
+    transform: translateX(50px); /* Desplazado hacia la derecha inicialmente */
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Cuando se activan, los elementos aparecen */
+.visible {
+    opacity: 1;
+    transform: translateX(0); /* Se mueve a su posición original */
+}

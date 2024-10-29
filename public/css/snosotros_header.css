@@ -1,0 +1,146 @@
+@import url(../css/styles.css);
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/Recurso\ 1.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
+}
+
+
+.logo img{
+    height: 7.5rem;
+}
+
+
+.navegacion-telefono{
+    display: none;
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+}
+.navegacion-principal{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    gap: 4rem;
+}
+.navegacion-principal a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+.navegacion-principal a:hover{
+    color: var(--verdeMarino);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.3rem;
+}
+.logo-navegacion-mobile{
+    display: flex;
+}
+.contenedor-menu-mobile{
+    padding: 0;
+}
+.boton-menu {
+    color: white;
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.contenedor-hero{
+    display: flex;
+    width: 100%;
+}
+.contenedor-hero img{
+    margin-top: 10rem;
+    margin-left: 20rem;
+    width: 50%;
+}
+
+.contenedor-arrow{
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem;
+}
+.contenedor-arrow img {
+    animation: saltar 1s ease-in-out infinite; /* Aplica la animación */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+    margin: 0 auto; /* Centra la imagen si es necesario */
+}
+
+/* Definir la animación de salto */
+@keyframes saltar {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final (sin movimiento) */
+    }
+    50% {
+        transform: translateY(-20px); /* La imagen sube 20px en el punto medio */
+    }
+}
+
+
+@media (max-width: 1036px) {
+    .logo img{
+        height: 4.5rem;
+    }
+    .navegacion-principal{
+        display: none;
+    }
+    .contenedor-logo{
+        display: none;
+    }
+    .boton-menu{
+        font-size: 5rem;
+    }
+    .contenedor-hero img{
+        margin-left: 10rem;
+        height: 70%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .offcanvas-half-width {
+        width: 50%; /* Ajusta al 50% del ancho de la pantalla */
+    }
+    .contenedor-logo{
+        display: none;
+    }
+    .navegacion-principal{
+        display: none;
+    }
+    .navegacion-telefono{
+        display: block;
+        background-color: transparent;
+    }
+    .navbar-toggler-icon{
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-hero img{
+        margin-left: 5rem;
+        height: 100%;
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 1037px) {
+    .logo-mobile{
+        display: none;
+    }
+    .boton-menu{
+        display: none;
+    }
+}
