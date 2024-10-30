@@ -78,3 +78,6 @@
 .card-casos-exito:hover {
     transform: scale(1.05); /* Aumenta el tamaño un 5% */
 }
+.card-clientes:hover{
+    transform: scale(1.05);
+}
