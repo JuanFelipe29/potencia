@@ -54,7 +54,7 @@
 
 @media (max-width: 1036px) {
     .logo img{
-        height: 4.5rem;
+        height: 3.5rem;
     }
     .navegacion-principal{
         display: none;
@@ -83,6 +83,14 @@
     }
     .navbar-toggler-icon{
         color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img{
+        height: 3rem;
+        margin-left: 1.5rem;
+        margin-top: 0rem;
     }
 }
 
