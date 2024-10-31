@@ -1,0 +1,14 @@
+@import url(../css/styles.css);
+
+.contactanos{
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contenedor-contactanos{
+    width: 80%;
+}
+
+.text-center-contactanos{
+    padding-bottom: 2rem;
+}

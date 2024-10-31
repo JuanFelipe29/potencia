@@ -19,10 +19,13 @@
 .boton-conectate{
     border: none;
     border-radius: 0%;
-    color: white;
     font-size: 1.5rem;
     width: 15rem;
     height: 3.5rem;
+}
+.boton-conectate a{
+    color: white;
+    text-decoration: none;
 }
 
 .p-2 h2{
