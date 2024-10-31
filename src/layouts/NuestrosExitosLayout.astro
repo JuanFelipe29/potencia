@@ -1,8 +1,9 @@
 ---
 import Conectate from "../components/conectate.astro"
-import Suscribete from "../components/Suscribete.astro"
-import SNosotrosNavbar from "../components/SNosotros_navbar.astro"
+import Footer from "../components/Footer.astro"
 import Scripts from "../components/Scripts.astro"
+import Suscribete from "../components/Suscribete.astro"
+import NEquipoNavbar from "../components/NEquipo_navbar.astro"
 ---
 
 <!DOCTYPE html>
@@ -10,19 +11,18 @@ import Scripts from "../components/Scripts.astro"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Potencia</title>
+    <title>Potenciat</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/snosotros_header.css">
-    <link rel="stylesheet" href="/css/mainSection.css">
-    <link rel="stylesheet" href="/css/snosotros_main.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nequipo_header.css">
     <link rel="stylesheet" href="/css/conectate.css">
     <link rel="stylesheet" href="/css/suscribete.css">
-
 </head>
 <body>
-    <SNosotrosNavbar />
+    
+    <NEquipoNavbar/>
     <slot />
     <Conectate />
     <Suscribete />

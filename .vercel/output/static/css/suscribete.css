@@ -32,10 +32,13 @@
 .formulario-suscribete{
     width: 100%;
 }
-.email-suscribete{
-    width: 20rem;
-    height: 5rem;
+
+.formulario-suscribete .email-suscribete .form-control,
+.formulario-suscribete .boton-suscribete .btn {
+    height: 4rem; /* Ajusta el tamaño según lo que necesites */
+    border-radius: 0%;
 }
+
 
 .contenedor-politicas{
     width: 80%;
