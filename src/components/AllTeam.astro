@@ -1,0 +1,30 @@
+---
+// Importa los datos del equipo
+import { teamData } from '../data/teamData.js';
+---
+<div style="background-color: #fff; width: 100%; padding: 50px 0;">
+    <div class="container my-5 team-section">
+        <h1 class="text-center mb-5" style="font-weight: bold;">NUESTRA GENTE</h1>
+    </div>
+</div>
+
+<div style="background-color: #f8f8f8; width: 100%; padding: 50px 0;">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            {teamData.map(member => (
+                <div class="col-lg-4 col-md-6 mb-4" >
+                    <div class="card team-card hover-effect">
+                        <div class="card-body text-center">
+                            <img src={member.img} alt={member.name} class="team-img" />
+                            <h5 class="team-name">{member.name}</h5>
+                            <p class="team-title text-center">{member.title}</p>
+                            <p class="team-description">
+                                {member.description}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</div>
