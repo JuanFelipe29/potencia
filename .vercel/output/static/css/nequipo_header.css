@@ -9,7 +9,9 @@
 }
 
 .logo img{
-    height: 7.5rem;
+    height: 4.3rem;
+    margin-left: 4.5rem;
+    margin-top: 1.5rem;
 }
 
 .navegacion-telefono{
@@ -21,7 +23,7 @@
 }
 .navegacion-principal{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 8rem;
     gap: 4rem;
 }
