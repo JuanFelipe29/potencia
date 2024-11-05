@@ -1,0 +1,109 @@
+<section class="seccion-exitos">
+    <div class="contenedor-exitos-hero">
+        <h2> NUESTROS EXITOS </h2>
+    </div>
+</section>
+
+<section class="seccion-nuestros-exitos">
+
+    <div class="contenedor-nuestros-exitos-cards">
+
+        <div class="card-group c-g">
+
+            <div class="card h-100 contenedor-card fade-left">
+              <img src="/images_exitos/ecoparque-mallorquin.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body-size">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+
+            <div class="card h-100 contenedor-card card-2 fade-down">
+              <img src="/images_exitos/malecon_del_rio_noche.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body-size">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+
+            <div class="card h-100 contenedor-card fade-right">
+              <img src="/images_exitos/TGLS-PUERTADEORO-001.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body-size">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+            </div>
+
+
+            <div class="card h-100 contenedor-card fade-left">
+                <img src="/images_exitos/ecoparque-mallorquin.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-size">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+
+            <div class="card h-100 contenedor-card card-2 fade-down">
+              <img src="/images_exitos/malecon_del_rio_noche.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body-size">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+            </div>
+
+            <div class="card h-100 contenedor-card fade-right">
+                <img src="/images_exitos/TGLS-PUERTADEORO-001.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-size">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+
+
+
+            <div class="card h-100 contenedor-card fade-left">
+                <img src="/images_exitos/ecoparque-mallorquin.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-size">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+  
+            <div class="card h-100 contenedor-card card-2 fade-down">
+                <img src="/images_exitos/malecon_del_rio_noche.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-size">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+  
+            <div class="card h-100 contenedor-card fade-right">
+                <img src="/images_exitos/TGLS-PUERTADEORO-001.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-size">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                      }
+                    });
+                  });
+      
+                  // Seleccionamos todos los elementos que queremos animar
+                  const fadeElements = document.querySelectorAll('.fade-left, .fade-right, .fade-down, .fade-up');
+                  
+                  // Observamos cada uno de los elementos
+                  fadeElements.forEach(el => observer.observe(el));
+                });
+            </script>
+
+        </div>
+    </div>
+</section>

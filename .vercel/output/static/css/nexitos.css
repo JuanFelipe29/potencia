@@ -1,0 +1,86 @@
+@import url(../css/styles.css);
+
+.seccion-exitos{
+    padding-top: 5rem;
+}
+
+.seccion-nuestros-exitos{
+    width: 90%;
+    margin: 0  auto;
+    padding-bottom: 10rem;
+}
+
+.contenedor-nuestros-exitos-cards{
+    margin-top: 6rem;
+}
+
+.card{
+    border: none;
+}
+
+.contenedor-card img{
+    width: 100%;
+    height: 50%;
+}
+
+.card-body-size{
+    height: 15rem;
+}
+
+.c-g{
+    column-gap: 3rem;
+    row-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .contenedor-card img{
+        height: 15rem;
+    }
+}
+
+@media (min-width: 481px) {
+    .card-2{
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .c-g{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Inicialmente, los elementos están ocultos y desplazados */
+.fade-left, .fade-right, .fade-up, .fade-down, .fade-up {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
+.fade-left {
+    transform: translateX(-100px); /* Desplazado hacia la izquierda */
+}
+  
+.fade-right {
+    transform: translateX(100px); /* Desplazado hacia la derecha */
+}
+
+.fade-down{
+    transform: translateY(100px);
+}
+
+.fade-up{
+    transform: translateY(-100px);
+}
+  
+  /* Cuando el elemento entra en la vista, le añadimos la clase 'show' */
+.fade-left.show, .fade-right.show, .fade-down.show, .fade-up.show {
+    opacity: 1;
+    transform: translateX(0); /* Regresa a su posición original */
+}
+
+.contenedor-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
