@@ -1,0 +1,29 @@
+@import url(../css/styles.css);
+
+.seccion-servicios{
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.contenedor-nuestros-servicios{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    margin-top: 5rem;
+    row-gap: 5rem;
+}
+
+.contenedor-informacion-servicios{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contenedor-nuestros-servicios{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        width: 100%;
+    }
+}
