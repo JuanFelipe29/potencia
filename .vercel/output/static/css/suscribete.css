@@ -39,6 +39,13 @@
     border-radius: 0%;
 }
 
+.terminos:hover{
+    color: rgba(13,110,253,255);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.3rem;
+}
+
 
 .contenedor-politicas{
     width: 80%;

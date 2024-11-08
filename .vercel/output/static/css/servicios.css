@@ -6,9 +6,9 @@
 }
 
 .contenedor-nuestros-servicios{
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 5rem;
     row-gap: 5rem;
@@ -19,11 +19,3 @@
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .contenedor-nuestros-servicios{
-        display: flex;
-        flex-direction: column;
-        row-gap: 3rem;
-        width: 100%;
-    }
-}

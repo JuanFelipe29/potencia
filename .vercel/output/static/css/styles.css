@@ -105,8 +105,21 @@ p, a{
     font-weight: bolder;
 }
 
-/* Estilo para el enlace activo */
-.activo {
+
+/* Estilo para el enlace activo con línea debajo */
+/* Aumenta la especificidad del enlace activo */
+.navegacion-principal a.activo {
     color: var(--verdeMarino); /* Cambia el color para resaltar */
     font-weight: bold;
+    position: relative;
+}
+
+.navegacion-principal a.activo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--verdeMarino);
 }
