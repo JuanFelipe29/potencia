@@ -64,7 +64,7 @@
 }
 
 .ver-mas:hover {
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: #262C62 ;
+    color: white;
     border-color: var(--negro);
 }
