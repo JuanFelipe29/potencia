@@ -55,7 +55,7 @@
 
 .stats-number {
     font-size: 8rem;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'fuenteTitulo', sans-serif;
     color: #262C60 ; /* Azul */
     margin-bottom: 5px;

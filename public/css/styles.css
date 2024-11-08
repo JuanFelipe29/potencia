@@ -94,3 +94,11 @@ p, a{
 .contenedor-card:hover {
     transform: scale(1.05); /* Aumenta el tamaño un 5% */
 }
+
+.none{
+    display: none;
+}
+
+.bolder{
+    font-weight: bolder;
+}

@@ -4,7 +4,7 @@
 
     <div class="card-group contenedor-casos-exito">
 
-        <div class="card card-casos-exito fade-left" >
+        <div class="card card-casos-exito fade-left contenedor-card" >
           <img src="/images_exitos/malecon_del_rio_noche.jpg" class="card-img-top" alt="...">
           <div class="card-body card-body-exitos">
             <h4>Urbanismo y Espacio Publico</h4>
@@ -13,7 +13,7 @@
           </div>
         </div>
 
-        <div class="card card-casos-exito fade-up" >
+        <div class="card card-casos-exito fade-up contenedor-card" >
           <img src="/images_exitos/ecoparque-mallorquin.jpg" class="card-img-top" alt="...">
           <div class="card-body card-body-exitos">
             <h4>Urbanismo y Espacio Publico</h4>
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="card card-casos-exito fade-right" >
+        <div class="card card-casos-exito fade-right contenedor-card" >
           <img src="/images_exitos/TGLS-PUERTADEORO-001.jpg" class="card-img-top" alt="...">
           <div class="card-body card-body-exitos">
             <h4>Oficina de Estructuracion de Proyectos</h4>
@@ -36,22 +36,5 @@
         <a href="/nuestros_exitos" class="btn btn-primary boton-ver-mas" role="button">Nuestros Exitos</a>
       </div>
 
-      <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add('show');
-                }
-              });
-            });
-
-            // Seleccionamos todos los elementos que queremos animar
-            const fadeElements = document.querySelectorAll('.fade-left, .fade-right, .fade-down, .fade-up');
-            
-            // Observamos cada uno de los elementos
-            fadeElements.forEach(el => observer.observe(el));
-          });
-      </script>
     </div>
 </section>
