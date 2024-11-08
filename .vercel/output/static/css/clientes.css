@@ -27,9 +27,13 @@
     color: var(--negro);
     border-color: var(--negro);
     font-size: 1.4rem;
+    width: 15rem;
+    height: 4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 .boton-ver-mas:hover{
-    background-color: darkblue;
+    background-color: #262C62;
     transition: background-color 1s ease;
     color: var(--blanco);
 }

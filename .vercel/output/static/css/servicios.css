@@ -5,10 +5,20 @@
     padding-bottom: 5rem;
 }
 
+.contenedor-titulo-servicios{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom:solid black;
+}
+.contenedor-titulo-servicios h2{
+    font-weight: bold;
+    padding-bottom: 3rem;
+}
+
 .contenedor-nuestros-servicios{
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 5rem;
     row-gap: 5rem;
@@ -17,13 +27,30 @@
 .contenedor-informacion-servicios{
     width: 90%;
     margin: 0 auto;
+    border: none;
 }
 
-@media (max-width: 768px) {
-    .contenedor-nuestros-servicios{
-        display: flex;
-        flex-direction: column;
-        row-gap: 3rem;
-        width: 100%;
+.contenedor-icon-image{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.contenedor-icon-image img{
+    margin-top: 3rem;
+}
+.card-body h2{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    .contenedor-icon-image{
+        padding-bottom: 5rem;
+    }
+    .card-body h2{
+        text-align: center;
+
     }
 }
