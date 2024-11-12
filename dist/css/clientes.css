@@ -7,32 +7,19 @@
     padding-top: 5rem;
 }
 
-.contenedor-clientes-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.contenedor-clientes{
+    width: 90%;
     margin: 0 auto;
-    max-width: 50%;
-}
-.card-clientes-comodin img{
-    height: 20rem;
-}
-.clientes-grid{
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .card-clientes{
     transition: transform 0.3s ease;
     border: none;
 }
-.card-clientes:hover {
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-}
+
 .card-body h3{
     text-align: left;
-}
-.clientes-grid .col {
-margin-bottom: 5rem; /* Aumenta el espacio vertical */
 }
 
 .boton-ver-mas{
@@ -40,16 +27,31 @@ margin-bottom: 5rem; /* Aumenta el espacio vertical */
     color: var(--negro);
     border-color: var(--negro);
     font-size: 1.4rem;
+    width: 15rem;
+    height: 4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 .boton-ver-mas:hover{
-    background-color: darkblue;
+    background-color: #262C62;
     transition: background-color 1s ease;
     color: var(--blanco);
 }
 
-@media (max-width: 480px) {
-    .clientes-grid{
+@media (max-width: 1024px) {
+    .contenedor-clientes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         width: 80%;
+    }
+    .contenedor-carta{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-clientes{
+        display: flex;
     }
     .boton-clientes{
         display: block;

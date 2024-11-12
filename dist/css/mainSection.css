@@ -1,0 +1,154 @@
+@import url(../css/styles.css);
+.container {
+    font-family: 'fuenteParrafo', sans-serif;
+    color: #757575; /* Gris oscuro */
+}
+
+
+
+/* Encabezado */
+.header-card {
+    font-family: 'fuenteTitulo', sans-serif;
+    color: #212121; /* Negro */
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.header-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-title {
+    font-size: 3rem;
+    color: #212121;
+}
+
+.company-description {
+    font-size: 16px;
+    color: #212121; /* Texto en negro */
+    max-width: 890px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Estadísticas */
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stats:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats-number {
+    font-size: 8rem;
+    font-weight: bolder;
+    font-family: 'fuenteTitulo', sans-serif;
+    color: #262C60 ; /* Azul */
+    margin-bottom: 5px;
+}
+
+.stats-label {
+    font-size: 1.6rem;
+    color: #757575; /* Gris oscuro */
+    margin-top: -10px;
+    text-align: center;
+}
+
+.stats-text {
+    font-size: 1.4rem;
+    font-family: 'fuenteParrafo', sans-serif;
+    color: #757575;
+    margin-top: 5px;
+}
+
+/* Línea divisora entre las estadísticas */
+.divider {
+    width: 2px;
+    height: 120px;
+    background-color: #757575; /* Gris oscuro */
+}
+
+
+/* Metodología Potencia */
+.methodology-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.methodology-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.methodology-description {
+    padding: 20px;
+    text-align: left;
+    color: #212121; /* Negro para el texto */
+}
+
+
+
+@media (max-width: 768px) {
+    .methodology-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .methodology-description {
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .divider {
+        width: 80%;
+        height: 2px;
+        margin: 20px auto;
+    }
+}
+
+/* Misión y Visión con efecto de tarjeta */
+.card-effect {
+    font-family: 'fuenteParrafo', sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-effect:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-family: 'fuenteTitulo', sans-serif;
+    font-weight: 600; /* Semibold */
+    color: #262C60 ; /* Azul */
+    margin-top: 40px;
+}
+
+.section-text {
+    font-size: 1.6rem;
+    color: #212121; /* Texto en negro */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}

@@ -3,10 +3,12 @@
 .header{
     display: flex;
     flex-direction: column;
-    background-image: url(../../public/images/Fondo\ Azul.png);
+    background-image: url(/images/Fondo\ Azul.png);
     background-size: cover;
     background-repeat: no repeat;
-    min-height: 120vh;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
 }
 
 
@@ -42,6 +44,9 @@
 .logo-navegacion-mobile{
     display: flex;
 }
+.contenedor-menu-mobile{
+    padding: 0;
+}
 .boton-menu {
     color: white;
     font-size: 4rem;
@@ -57,7 +62,31 @@
 .contenedor-hero img{
     margin-top: 10rem;
     margin-left: 20rem;
+    width: 50%;
 }
+
+.contenedor-arrow{
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10rem;
+}
+.contenedor-arrow img {
+    animation: saltar 1s ease-in-out infinite; /* Aplica la animación */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+    margin: 0 auto; /* Centra la imagen si es necesario */
+}
+
+/* Definir la animación de salto */
+@keyframes saltar {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final (sin movimiento) */
+    }
+    50% {
+        transform: translateY(-20px); /* La imagen sube 20px en el punto medio */
+    }
+}
+
 
 @media (max-width: 1036px) {
     .logo img{
@@ -80,6 +109,9 @@
 }
 
 @media (max-width: 768px) {
+    .offcanvas-half-width {
+        width: 50%; /* Ajusta al 50% del ancho de la pantalla */
+    }
     .contenedor-logo{
         display: none;
     }
@@ -112,3 +144,12 @@
         display: none;
     }
 }
+
+.offcanvas-titulo{
+    font-size: 2.5rem;
+}
+
+.nav-item a{
+    font-size: 1.5rem;
+}
+

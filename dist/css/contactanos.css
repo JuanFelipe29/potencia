@@ -1,0 +1,65 @@
+@import url(../css/styles.css);
+
+.contactanos{
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.contenedor-contactanos{
+    width: 80%;
+}
+
+.text-center-contactanos{
+    padding-bottom: 2rem;
+}
+
+.contenido-ubicacion{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.contenido-ubicacion h2{
+    text-align: left;
+}
+
+
+.contactanos-formulario{
+    margin-top: 5rem;
+}
+
+.contenedor-contactanos-formulario{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-formulario{
+    width: 50%;
+}
+.contenedor-formulario h3{
+    text-align: left;
+    font-weight: 500;
+}
+
+.form-label h3{
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+}
+
+.form-control-lg{
+    height: 5rem;
+}
+
+.form-control-lg-message{
+    height: 15rem;
+}
+
+
+@media (max-width: 768px) {
+    .contenido-ubicacion{
+        width: 100%;
+    }
+    .contenedor-formulario{
+        width: 100%;
+    }
+}
