@@ -16,21 +16,18 @@
       // Observamos cada uno de los elementos
       fadeElements.forEach(el => observer.observe(el));
     });
-</script>
 
-<script>
 
-// Obtiene la ruta actual de la URL (sin el dominio)
-  const currentPath = window.location.pathname;
-  
-  // Selecciona todos los enlaces de navegación
-  const navLinks = document.querySelectorAll('.navegacion-principal a');
-  
-  // Itera sobre cada enlace y compara su `href` con `currentPath`
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-      link.classList.add('activo'); // Agrega la clase "activo" al enlace correspondiente
-    }
-  });
-  
+    // Obtiene la ruta actual de la URL (sin el dominio)
+    const currentPath = window.location.pathname;
+    
+    // Selecciona todos los enlaces de navegación
+    const navLinks = document.querySelectorAll('.navegacion-principal a');
+    
+    // Itera sobre cada enlace y compara su `href` con `currentPath`
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('activo'); // Agrega la clase "activo" al enlace correspondiente
+      }
+    });
 </script>
